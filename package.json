@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "tsc --noEmit && eslint . --ext js,ts --quiet --fix"
   },
   "private": true,
   "dependencies": {
@@ -39,4 +40,4 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~5.0.2"
   }
-}
+};
